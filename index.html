@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rapport MSP Le Colibri 2026</title>
+<meta name="description" content="Préparation du rapport d'activité 2026 de la Maison de Santé Pluriprofessionnelle Le Colibri de Merville.">
+<link rel="icon" type="image/png" href="logo-colibri.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@500&family=Literata:opsz,wght@7..72,650&display=swap">
+<style>
+/* ============================================================
+   POUR METTRE À JOUR : modifier les blocs MISSIONS / PROTOCOLES
+   plus bas, ou coller le lien Jotform dans JOTFORM_URL (script).
+   ============================================================ */
+:root{
+  --bg:#f4f6f3; --surface:#fff; --ink:#1c2824; --muted:#5a6a63; --line:#d8e0da;
+  --accent:#1e4a31; --accent-soft:#e3eee6; --flag:#9a5b0c; --flag-soft:#fbf1e0;
+  --ok:#2c7a4b; --ok-soft:#e3f2e8; --bad:#a63d33;
+  --f-display:"Literata",Georgia,serif; --f-body:"Atkinson Hyperlegible",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#121a16; --surface:#1a241f; --ink:#e3ebe6; --muted:#9aaaa2; --line:#2d3b34;
+  --accent:#8fcfa5; --accent-soft:#1c3527; --flag:#e6b25c; --flag-soft:#3a2d17;
+  --ok:#7fcf9c; --ok-soft:#183324; --bad:#ef8f84; color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
+header{display:grid;gap:10px;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:64px;height:auto;flex:none}
+@media (prefers-color-scheme:dark){.brand img{filter:brightness(0) invert(1) opacity(.85)}}
+.eyebrow{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1,h2,h3{font-family:var(--f-display);font-weight:650;margin:0;line-height:1.2;text-wrap:balance}
+h1{font-size:clamp(1.7rem,3.6vw,2.4rem)} h2{font-size:1.4rem} h3{font-size:1.08rem}
+.lead{max-width:70ch;color:var(--muted);margin:0}
+nav{display:flex;flex-wrap:wrap;gap:8px}
+nav a{color:var(--accent);background:var(--accent-soft);text-decoration:none;padding:6px 12px;border-radius:999px;font-size:.92rem}
+main{display:grid;gap:28px}
+section{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;display:grid;gap:18px;min-width:0;scroll-margin-top:12px}
+.note{font-size:.9rem;color:var(--muted);margin:0}
+.mission{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:20px;border-top:1px solid var(--line);padding-top:18px}
+.mission img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);display:block}
+.mission .body{display:grid;gap:8px;align-content:start;min-width:0}
+dl{display:grid;grid-template-columns:minmax(110px,150px) minmax(0,1fr);gap:4px 14px;margin:0;font-size:.95rem}
+dt{color:var(--muted)} dd{margin:0}
+.pill{display:inline-block;font-size:.76rem;padding:2px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent);white-space:nowrap;vertical-align:middle}
+.pill.ok{background:var(--ok-soft);color:var(--ok)} .pill.warn{background:var(--flag-soft);color:var(--flag)}
+.pill.off{background:var(--line);color:var(--muted)}
+.todo{background:var(--flag-soft);border-radius:8px;padding:8px 12px;font-size:.9rem}
+.proto{border-top:1px solid var(--line);padding-top:18px;display:grid;gap:10px}
+.proto-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:baseline}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line)}
+th{font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.n,th.n{text-align:right;font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+td.q{color:var(--flag);font-family:var(--f-body)}
+ol{margin:0;padding-left:1.2em;font-size:.94rem}
+.form-box{border:1px dashed var(--line);border-radius:8px;padding:18px;color:var(--muted)}
+iframe.jot{width:100%;min-height:1100px;border:0;border-radius:8px;background:var(--surface)}
+a{color:var(--accent)}
+footer{margin-top:30px;font-size:.85rem;color:var(--muted)}
+@media (max-width:640px){.mission{grid-template-columns:minmax(0,1fr)}.mission img{max-width:260px}dl{grid-template-columns:minmax(0,1fr)}dd{margin-bottom:6px}}
+/* Couleurs par bloc */
+.blk-miss{--c:#b45f06;--cs:#fff1dc}
+.blk-proto{--c:#1e6b45;--cs:#e0f1e6}
+.blk-stage{--c:#6b4bb8;--cs:#eee8fb}
+.blk-form{--c:#2b5aa6;--cs:#e4edfb}
+@media (prefers-color-scheme:dark){.blk-miss{--c:#f2b45e;--cs:#3b2a14}.blk-proto{--c:#7fd3a2;--cs:#173726}.blk-stage{--c:#b9a3f2;--cs:#2b2342}.blk-form{--c:#8fb3f0;--cs:#1b2a44}}
+section.blk{border-top:6px solid var(--c);background:linear-gradient(180deg,var(--cs) 0,var(--surface) 140px)}
+section.blk>h2{color:var(--c)}
+section.blk .proto-head h3,section.blk .mission h3{color:var(--c)}
+nav a.blk-miss,nav a.blk-proto,nav a.blk-stage,nav a.blk-form{background:var(--cs);color:var(--c);border:1px solid var(--c)}
+.blk-stage .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:0;padding:0;list-style:none;counter-reset:s}
+.blk-stage .steps li{background:var(--cs);border-radius:8px;padding:10px 12px;font-size:.92rem;counter-increment:s}
+.blk-stage .steps li::before{content:counter(s);display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--c);color:var(--surface);text-align:center;font-weight:700;font-size:.8rem;line-height:22px;margin-right:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">
+    <img src="logo-colibri.png" alt="Logo de la MSP Le Colibri" width="64" height="46">
+    <div class="eyebrow">Maison de Santé Pluriprofessionnelle Le Colibri · Merville</div>
+  </div>
+  <h1>Préparation du rapport d'activité 2026</h1>
+  <p class="lead">Où en sommes-nous ? Cette page rassemble les actions 2026 et l'état des protocoles, avec les résultats des évaluations précédentes pour comparaison. Chaque professionnel complète ce qui le concerne via le formulaire en bas de page.</p>
+  <nav><a class="blk-miss" href="#missions">Missions de santé publique</a><a class="blk-proto" href="#protocoles">Protocoles pluriprofessionnels</a><a class="blk-stage" href="#stages">Stages</a><a class="blk-form" href="#completer">Compléter</a></nav>
+</header>
+
+<main>
+<section id="missions" class="blk blk-miss">
+  <h2>Missions de santé publique 2026</h2>
+  <p class="note">Les deux campagnes ont été validées par la CPAM. Des fiches action viendront formaliser leur réalisation.</p>
+
+  <article class="mission">
+    <a href="affiches/octobre-rose-merville.jpg" target="_blank" rel="noopener"><img src="affiches/octobre-rose-merville.jpg" alt="Affiche Octobre Rose : prévention du cancer du sein, 20 octobre, MSP Le Colibri" loading="lazy"></a>
+    <div class="body">
+      <h3>Octobre Rose : prévention du cancer du sein <span class="pill ok">Réalisée</span></h3>
+      <dl>
+        <dt>Date</dt><dd>20 octobre 2026, 10h–16h · MSP Le Colibri</dd>
+        <dt>Format</dt><dd>Atelier gratuit et sans inscription : apprentissage de l'autopalpation mammaire sur buste 3D, information sur le dépistage et la mammographie</dd>
+        <dt>Intervenants</dt><dd>Dr Justine Delattre, Dr Baptiste Destrez</dd>
+      </dl>
+      <div class="todo">À compléter : fréquentation, nombre de personnes orientées vers un dépistage ou une mammographie, partenaires, points à améliorer.</div>
+    </div>
+  </article>
+
+  <article class="mission">
+    <a href="affiches/mois-sans-tabac-merville.jpg" target="_blank" rel="noopener"><img src="affiches/mois-sans-tabac-merville.jpg" alt="Affiche Mois sans tabac : 2 ateliers en petit groupe, 26 novembre et 3 décembre 2026" loading="lazy"></a>
+    <div class="body">
+      <h3>Mois sans tabac : 2 ateliers en petit groupe <span class="pill warn">En cours</span></h3>
+      <dl>
+        <dt>Dates</dt><dd>26 novembre et 3 décembre 2026, 19h15–20h30 · MSP Le Colibri</dd>
+        <dt>Format</dt><dd>Atelier 1 : atelier médical sur les mécanismes de la dépendance. Atelier 2 : accompagnement au sevrage par l'hypnose. Gratuit, sur inscription au secrétariat, présence aux deux séances indispensable.</dd>
+        <dt>Intervenants</dt><dd>Dr Aïcha Bihya, Mme Sophie Hemelsoet</dd>
+        <dt>Lien</dt><dd>Mission en lien avec le protocole « addiction au tabac »</dd>
+      </dl>
+      <div class="todo">À compléter après le 3 décembre : nombre d'inscrits et de participants aux deux séances, patients engagés dans un sevrage, retours des participants.</div>
+    </div>
+  </article>
+</section>
+
+<section id="protocoles" class="blk blk-proto">
+  <h2>Protocoles pluriprofessionnels</h2>
+  <p class="note">Quatre protocoles sont à évaluer pour 2026. Le protocole maladie rénale chronique, nouveau, sera évalué en 2027. Le protocole AVK a été abandonné. Les cases « ? » sont à renseigner pour 2026.</p>
+
+  <div class="proto">
+    <div class="proto-head"><h3>01 · Plaies chroniques à domicile</h3><span class="pill warn">Évaluation 2026 à faire</span></div>
+    <p class="note">Référente : Dr Aïcha Bihya · Médecins et IDE · Actualisation prévue : octobre 2026</p>
+    <div class="tbl"><table><thead><tr><th>Indicateur</th><th class="n">2022</th><th class="n">2025</th><th class="n">2026</th></tr></thead><tbody>
+      <tr><td>Patients inclus</td><td class="n">41</td><td class="n">52</td><td class="n q">?</td></tr>
+      <tr><td>Patients encore en soins en fin d'année</td><td class="n">—</td><td class="n">19</td><td class="n q">?</td></tr>
+      <tr><td>Passages IDE par semaine et par patient (moyenne)</td><td class="n">4,8</td><td class="n">4,3</td><td class="n q">?</td></tr>
+      <tr><td>Sorties : cicatrisation / hospitalisation / décès</td><td class="n">—</td><td class="n">33 au total</td><td class="n q">?</td></tr>
+    </tbody></table></div>
+    <ol><li>Distinguer, parmi les sorties, cicatrisations complètes et hospitalisations imprévues</li><li>Tracer la synthèse clinique initiale (stade, étiologie, EVA, exsudat)</li><li>Maintenir les photos hebdomadaires et les alertes dans Dr Santé</li></ol>
+  </div>
+
+  <div class="proto">
+    <div class="proto-head"><h3>02 · Pied diabétique</h3><span class="pill warn">Évaluation 2026 à faire</span></div>
+    <p class="note">Référents : Dr Charlotte Bailleul, Romain Huxley · Médecins, podologues et IDE</p>
+    <div class="tbl"><table><thead><tr><th>Indicateur</th><th class="n">2022</th><th class="n">2025</th><th class="n">2026</th></tr></thead><tbody>
+      <tr><td>Patients inclus</td><td class="n">44</td><td class="n">52</td><td class="n q">?</td></tr>
+      <tr><td>Consultations</td><td class="n">—</td><td class="n">265</td><td class="n q">?</td></tr>
+      <tr><td>Consultations par patient (moyenne)</td><td class="n">—</td><td class="n">5,1</td><td class="n q">?</td></tr>
+      <tr><td>Gradation initiale tracée (monofilament, Doppler, HbA1c)</td><td class="n">—</td><td class="n">—</td><td class="n q">?</td></tr>
+    </tbody></table></div>
+    <ol><li>Suivre la répartition des patients par grade de risque</li><li>Mesurer les résultats cliniques : maux perforants, hospitalisations</li><li>Tracer soins locaux, chaussage et alertes dans Dr Santé</li></ol>
+  </div>
+
+  <div class="proto">
+    <div class="proto-head"><h3>03 · Insuffisance cardiaque</h3><span class="pill warn">Évaluation 2026 à faire</span></div>
+    <p class="note">Référente : Dr Justine Delattre · Tous professionnels (dépistage), médecins, IDE, cardiologue vacataire · Protocole créé en décembre 2024</p>
+    <div class="tbl"><table><thead><tr><th>Indicateur</th><th class="n">2025</th><th class="n">2026</th></tr></thead><tbody>
+      <tr><td>Patients inclus</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+      <tr><td>Orientations vers le cardiologue</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+      <tr><td>Prévalence de l'insuffisance cardiaque à la MSP</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+      <tr><td>Bilans tracés (ECG, créatinine, DFG, BNP)</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+    </tbody></table></div>
+    <ol><li>Former les IDE au suivi post-hospitalisation pour décompensation</li><li>Mettre en place des ateliers d'ETP avec l'IDE Asalée</li><li>Échanger sur les cas complexes en RCP</li></ol>
+  </div>
+
+  <div class="proto">
+    <div class="proto-head"><h3>04 · Addiction au tabac</h3><span class="pill warn">Évaluation 2026 à faire</span></div>
+    <p class="note">Porteuse : Dr Charlotte Bailleul · Médecins, IDE, kinésithérapeutes, podologues, diététicienne · Protocole créé en juin 2025</p>
+    <div class="tbl"><table><thead><tr><th>Indicateur</th><th class="n">2025</th><th class="n">2026</th></tr></thead><tbody>
+      <tr><td>Fumeurs identifiés</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+      <tr><td>Patients engagés dans un sevrage</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+      <tr><td>Consultations de suivi par patient</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+      <tr><td>Test de Fagerström et substituts tracés</td><td class="n">n.c.</td><td class="n q">?</td></tr>
+    </tbody></table></div>
+    <ol><li>Repérer le statut tabagique à chaque contact</li><li>S'appuyer sur les ateliers du Mois sans tabac pour engager les patients</li><li>Tracer le suivi à 1 semaine, 3, 6, 9 et 12 mois dans Dr Santé</li></ol>
+  </div>
+
+  <div class="proto">
+    <div class="proto-head"><h3>05 · Maladie rénale chronique</h3><span class="pill">Nouveau · évaluation 2027</span></div>
+    <p class="note">Médecins, IDE, kinésithérapeutes, psychologue · Remplace le protocole AVK</p>
+    <div class="tbl"><table><thead><tr><th>Indicateur suivi à partir de 2027</th></tr></thead><tbody>
+      <tr><td>Patients diagnostiqués et inclus</td></tr>
+      <tr><td>RCP consacrées au sujet</td></tr>
+      <tr><td>Biologie tracée (créatinine, albuminurie, DFG)</td></tr>
+      <tr><td>Satisfaction des patients et hospitalisations pour complications</td></tr>
+    </tbody></table></div>
+  </div>
+
+  <div class="proto">
+    <div class="proto-head"><h3>Protocole AVK</h3><span class="pill off">Abandonné</span></div>
+    <p class="note">Ce protocole n'est plus suivi et n'entre pas dans l'évaluation 2026.</p>
+  </div>
+</section>
+
+<section id="stages" class="blk blk-stage">
+  <h2>Accueil de stagiaires 2026</h2>
+  <p class="note">Chaque professionnel qui accueille un stagiaire ou un interne à la MSP le déclare ici, un formulaire par stage. Ces déclarations alimentent la partie « accueil de stagiaires » du rapport et servent de justificatifs pour la CPAM.</p>
+  <ol class="steps"><li>Renseignez le maître de stage et le stagiaire</li><li>Indiquez le type de stage, l'école et les dates</li><li>Joignez la convention si vous l'avez</li></ol>
+  <div id="jot-stages"><div class="form-box">Chargement du formulaire stages…</div></div>
+</section>
+
+<section id="completer" class="blk blk-form">
+  <h2>Compléter une mission ou un protocole</h2>
+  <p class="note">Indiquez votre nom, le bloc concerné (mission, protocole ou démarche qualité) et vos informations. Les réponses sont centralisées par la coordination puis reportées sur cette page.</p>
+  <div id="jot-zone"><div class="form-box">Chargement du formulaire…</div></div>
+</section>
+</main>
+
+<footer>MSP Le Colibri · 6 place Bruel, 59660 Merville · Coordination : Coorsanté · Dernière mise à jour : novembre 2026</footer>
+</div>
+<script>
+// Coller ici le lien du formulaire Jotform, ex. "https://form.jotform.com/123456789012345"
+var JOTFORM_URL = "https://form.jotform.com/263274908621057";
+if (/^https:\/\/([a-z0-9-]+\.)*jotform\.(com|eu|me)\//i.test(JOTFORM_URL)) {
+  var f = document.createElement("iframe");
+  f.className = "jot"; f.src = JOTFORM_URL; f.title = "Formulaire de saisie"; f.loading = "lazy";
+  var z = document.getElementById("jot-zone"); z.innerHTML = ""; z.appendChild(f);
+  var p = document.createElement("p"); p.className = "note";
+  var a = document.createElement("a"); a.href = JOTFORM_URL; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Ouvrir le formulaire dans un nouvel onglet";
+  p.appendChild(a); z.appendChild(p);
+}
+var JOTFORM_STAGES_URL = "https://form.jotform.com/263275527184059";
+(function(){
+  var z = document.getElementById("jot-stages"); if (!z) return;
+  var f = document.createElement("iframe"); f.className = "jot"; f.style.minHeight = "1300px"; f.src = JOTFORM_STAGES_URL; f.title = "Formulaire stages"; f.loading = "lazy";
+  z.innerHTML = ""; z.appendChild(f);
+  var p = document.createElement("p"); p.className = "note"; var a = document.createElement("a"); a.href = JOTFORM_STAGES_URL; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Ouvrir le formulaire stages dans un nouvel onglet"; p.appendChild(a); z.appendChild(p);
+})();
+</script>
+</body>
+</html>
