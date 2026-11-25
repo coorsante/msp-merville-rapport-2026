@@ -87,13 +87,14 @@ nav a.blk-miss,nav a.blk-proto,nav a.blk-stage,nav a.blk-form{background:var(--c
   </div>
   <h1>Préparation du rapport d'activité 2026</h1>
   <p class="lead">Où en sommes-nous ? Cette page rassemble les actions 2026 et l'état des protocoles, avec les résultats des évaluations précédentes pour comparaison. Chaque professionnel complète ce qui le concerne via le formulaire en bas de page.</p>
-  <nav><a class="blk-miss" href="#missions">Missions de santé publique</a><a class="blk-proto" href="#protocoles">Protocoles pluriprofessionnels</a><a class="blk-stage" href="#stages">Stages</a><a class="blk-form" href="#completer">Compléter</a></nav>
+  <nav><a class="blk-miss" href="#missions">Missions de santé publique</a><a class="blk-proto" href="#protocoles">Protocoles pluriprofessionnels</a><a class="blk-stage" href="#stages">Stages</a><a class="blk-form" href="#completer">Transmettre une évaluation</a></nav>
 </header>
 
 <main>
 <section id="missions" class="blk blk-miss">
   <h2>Missions de santé publique 2026</h2>
   <p class="note">Les deux campagnes ont été validées par la CPAM. Des fiches action viendront formaliser leur réalisation.</p>
+  <p class="note"><a href="#completer">Transmettre le mini-bilan d’une mission de santé publique</a></p>
 
   <article class="mission">
     <a href="affiches/octobre-rose-merville.jpg" target="_blank" rel="noopener"><img src="affiches/octobre-rose-merville.jpg" alt="Affiche Octobre Rose : prévention du cancer du sein, 20 octobre, MSP Le Colibri" loading="lazy"></a>
@@ -126,6 +127,7 @@ nav a.blk-miss,nav a.blk-proto,nav a.blk-stage,nav a.blk-form{background:var(--c
 <section id="protocoles" class="blk blk-proto">
   <h2>Protocoles pluriprofessionnels</h2>
   <p class="note">Quatre protocoles sont à évaluer pour 2026. Le protocole maladie rénale chronique, nouveau, sera évalué en 2027. Le protocole AVK a été abandonné. Les cases « ? » sont à renseigner pour 2026.</p>
+  <p class="note"><a href="#completer">Transmettre l’évaluation d’un protocole pluriprofessionnel</a></p>
 
   <div class="proto">
     <div class="proto-head"><h3>01 · Plaies chroniques à domicile</h3><span class="pill warn">Évaluation 2026 à faire</span></div>
@@ -200,25 +202,21 @@ nav a.blk-miss,nav a.blk-proto,nav a.blk-stage,nav a.blk-form{background:var(--c
 </section>
 
 <section id="completer" class="blk blk-form">
-  <h2>Compléter une mission ou un protocole</h2>
-  <p class="note">Indiquez votre nom, le bloc concerné (mission, protocole ou démarche qualité) et vos informations. Les réponses sont centralisées par la coordination puis reportées sur cette page.</p>
-  <div id="jot-zone"><div class="form-box">Chargement du formulaire…</div></div>
+  <h2>Transmettre une évaluation pour le rapport 2026</h2>
+  <p class="note">Indiquez votre nom et choisissez le bloc concerné dans le formulaire.</p>
+  <ul>
+    <li><strong>Mission</strong> — indiquez l’action (Octobre Rose ou Mois sans tabac), la fréquentation, les résultats et les points à améliorer.</li>
+    <li><strong>Protocole</strong> — indiquez le protocole concerné et renseignez ses indicateurs 2026 ainsi que les points à améliorer.</li>
+  </ul>
+  <p class="note">Les réponses sont centralisées par la coordination. Si vous avez déjà rédigé votre évaluation dans un document, vous pouvez l’adresser à <a href="mailto:contact@coorsante.fr">contact@coorsante.fr</a>.</p>
+  <p class="note"><a href="https://form.jotform.com/263274908621057" target="_blank" rel="noopener">Ouvrir le formulaire d’évaluation dans un nouvel onglet</a></p>
+  <iframe class="jot" src="https://form.jotform.com/263274908621057" title="Évaluation des missions et protocoles de la MSP Le Colibri" loading="lazy"></iframe>
 </section>
 </main>
 
 <footer>MSP Le Colibri · 6 place Bruel, 59660 Merville · Coordination : Coorsanté · Dernière mise à jour : novembre 2026</footer>
 </div>
 <script>
-// Coller ici le lien du formulaire Jotform, ex. "https://form.jotform.com/123456789012345"
-var JOTFORM_URL = "https://form.jotform.com/263274908621057";
-if (/^https:\/\/([a-z0-9-]+\.)*jotform\.(com|eu|me)\//i.test(JOTFORM_URL)) {
-  var f = document.createElement("iframe");
-  f.className = "jot"; f.src = JOTFORM_URL; f.title = "Formulaire de saisie"; f.loading = "lazy";
-  var z = document.getElementById("jot-zone"); z.innerHTML = ""; z.appendChild(f);
-  var p = document.createElement("p"); p.className = "note";
-  var a = document.createElement("a"); a.href = JOTFORM_URL; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Ouvrir le formulaire dans un nouvel onglet";
-  p.appendChild(a); z.appendChild(p);
-}
 var JOTFORM_STAGES_URL = "https://form.jotform.com/263275527184059";
 (function(){
   var z = document.getElementById("jot-stages"); if (!z) return;
