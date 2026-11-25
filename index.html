@@ -76,6 +76,10 @@ nav a.blk-miss,nav a.blk-proto,nav a.blk-stage,nav a.blk-form{background:var(--c
 .blk-stage .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:0;padding:0;list-style:none;counter-reset:s}
 .blk-stage .steps li{background:var(--cs);border-radius:8px;padding:10px 12px;font-size:.92rem;counter-increment:s}
 .blk-stage .steps li::before{content:counter(s);display:inline-block;width:22px;height:22px;border-radius:50%;background:var(--c);color:var(--surface);text-align:center;font-weight:700;font-size:.8rem;line-height:22px;margin-right:8px}
+.evaluation-link{display:inline-flex;align-items:center;gap:.75rem;padding:.7rem 1rem;border:2px solid var(--c);border-radius:8px;background:var(--cs);color:var(--c);font-weight:700;text-decoration:none;max-width:100%;box-sizing:border-box}
+.evaluation-link .arrow{flex:none;font-size:1.25em;line-height:1}
+.evaluation-link:hover{text-decoration:underline}
+.evaluation-link:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </style>
 </head>
 <body>
@@ -94,7 +98,7 @@ nav a.blk-miss,nav a.blk-proto,nav a.blk-stage,nav a.blk-form{background:var(--c
 <section id="missions" class="blk blk-miss">
   <h2>Missions de santé publique 2026</h2>
   <p class="note">Les deux campagnes ont été validées par la CPAM. Des fiches action viendront formaliser leur réalisation.</p>
-  <p class="note"><a href="#completer">Transmettre le mini-bilan d’une mission de santé publique</a></p>
+  <p><a class="evaluation-link" href="#completer"><span>Transmettre le mini-bilan d’une mission de santé publique</span><span class="arrow" aria-hidden="true">→</span></a></p>
 
   <article class="mission">
     <a href="affiches/octobre-rose-merville.jpg" target="_blank" rel="noopener"><img src="affiches/octobre-rose-merville.jpg" alt="Affiche Octobre Rose : prévention du cancer du sein, 20 octobre, MSP Le Colibri" loading="lazy"></a>
@@ -127,7 +131,7 @@ nav a.blk-miss,nav a.blk-proto,nav a.blk-stage,nav a.blk-form{background:var(--c
 <section id="protocoles" class="blk blk-proto">
   <h2>Protocoles pluriprofessionnels</h2>
   <p class="note">Quatre protocoles sont à évaluer pour 2026. Le protocole maladie rénale chronique, nouveau, sera évalué en 2027. Le protocole AVK a été abandonné. Les cases « ? » sont à renseigner pour 2026.</p>
-  <p class="note"><a href="#completer">Transmettre l’évaluation d’un protocole pluriprofessionnel</a></p>
+  <p><a class="evaluation-link" href="#completer"><span>Transmettre l’évaluation d’un protocole pluriprofessionnel</span><span class="arrow" aria-hidden="true">→</span></a></p>
 
   <div class="proto">
     <div class="proto-head"><h3>01 · Plaies chroniques à domicile</h3><span class="pill warn">Évaluation 2026 à faire</span></div>
